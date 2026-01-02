@@ -1,0 +1,7 @@
+Hello
+World
+This is a test file
+for get_next_line
+42
+Last line
+
