@@ -9,3 +9,6 @@ test_gnl
 *.so
 *.dylib
 
+# Test files
+gnlTester/
+

@@ -1,8 +1,12 @@
-#ifndef GET_NEXT_LINE
-# define BUFFER_SIZE 42
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
-#include <unistd.h>
-#include <stdlib.h>
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+
+# include <unistd.h>
+# include <stdlib.h>
 
 char *get_next_line(int fd);
 char *ft_strchr(const char *s, int c);

@@ -58,9 +58,18 @@ char *get_next_line(int fd)
         return (NULL);
     return (read_loop(fd, buffer, &stash));
 }
-/**
-Read return values:
-    > 0 ==> Success
-    0 ==> EOF
-    -1 ==> Error
-*/
+
+char *ft_strchr(const char *s, int c)
+{
+    if (!s)
+        return (NULL);
+    while (*s)
+    {
+        if (*s == (char)c)
+            return ((char *)s);
+        s++;
+    }
+    if ((char)c == '\0')
+        return ((char *)s);
+    return (NULL);
+}
